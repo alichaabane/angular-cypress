@@ -3,10 +3,10 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 @Component({
   selector: 'app-stepper',
   template: `
-    <div>
-      <button data-cy="decrement" (click)="decrement()">-</button>
-      <span data-cy="counter">{{ count }}</span>
-      <button data-cy="increment" (click)="increment()">+</button>
+    <div style="justify-content: center; text-align: center; display: flex">
+      <button style="margin-right: 15px" data-cy="decrement" (click)="decrement()">-</button>
+      <span style="font-weight: bold" data-cy="counter">{{ count }}</span>
+      <button style="margin-left: 15px" data-cy="increment" (click)="increment()">+</button>
     </div>
   `,
 })
